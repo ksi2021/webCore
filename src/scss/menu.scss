@@ -1,0 +1,237 @@
+.menu {
+  position: absolute;
+  width: 320px;
+  transition: .3s;
+  top:0;
+  background: $backgroundWhite;
+  z-index: 10;
+  box-shadow:  16px 0 52px 0 rgba(14, 24, 80, 0.20);
+
+  @media screen and (min-width: 360px) {
+    width: 360px;
+  }
+
+  @media screen and (min-width: 361px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__blur-area{
+      width: 1000px;
+      height: 947px;
+      border: 10px;
+
+      position: absolute;
+      left: 320px;
+      top: 0;
+      background: $backgroundWhite;
+      opacity: 0.9605;
+      box-shadow: inset -16px 0px 52px -10px rgba(14, 24, 80, 0.20);
+    }
+  }
+
+  @media screen and (min-width: 1366px){
+    box-shadow: none;
+    left:0;
+    position: fixed;
+    &__blur-area{
+      display: none;
+    }
+  }
+
+  &--hidden{
+    left: -1366px;
+
+    @media screen and (min-width: 1366px){
+      left: 0;
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+  }
+
+  &__links {
+    list-style: none;
+    margin-top: 50px;
+    padding-left: 24px;
+
+    @media (min-width: 320px){ margin-bottom: -170px}
+    @media (min-width: 760px){ margin-bottom: 0}
+  }
+
+  &__link {
+    margin-bottom: 32px;
+    color: $colorBlack;;
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.2px;
+  }
+
+  &__link a {
+    transition: 0.3s;
+    text-decoration: none;
+    color: $colorBlack;
+  }
+
+  &__link a:hover {
+    color: $textGray;
+    cursor: pointer;
+  }
+
+  &__link a::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 32px;
+    flex-shrink: 0;
+    //background: url("/img/highlight.svg") no-repeat;
+    background-color: #41F6D7;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: contain;
+    left: -5px;
+    transform: translateY(-5%);
+    transition: 0.3s;
+  }
+
+  &__link a:hover::before {
+    left: 0;
+  }
+
+  //&__link a:hover {
+  //  color: $textGray;
+  //  cursor: pointer;
+  //}
+
+  &__contacts {
+    margin-bottom: 40px;
+  }
+
+
+
+
+  &__langs {
+
+    @media (min-width: 320px){ margin-top: -50px}
+    @media (min-width: 768px){ margin-bottom: 0}
+
+    .langs__lang {
+      display: inline-block;
+      color: $colorBlack;
+      font-family: "TT Lakes Medium";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      /* 150% */
+      letter-spacing: -0.2px;
+      margin-right: 7px;
+
+      &:hover {
+        color: $textGray;
+        cursor: pointer;
+      }
+
+    }
+  }
+  &__contacts  {
+    .contacts-phone{
+      color: $colorBlack;
+      font-family: "TT Lakes Medium";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      /* 133.333% */
+      letter-spacing: -0.6px;
+    }
+    .contacts__icon:hover img {
+      filter: drop-shadow(5px 5px 20px red) invert(75%);
+      cursor: pointer;
+    }
+
+  }
+}
+
+.menu__contacts,
+.menu__langs {
+  padding-left: 16px;
+  padding-bottom: 32px;
+}
+
+.header {
+  &__item:last-child {
+    margin: 0 24px 0 auto;
+  }
+
+  &__item:first-child {
+    margin-left: 24px;
+    margin-right: 16px;
+  }
+}
+
+
+.contacts{
+  &__icons {
+    margin: 172px 0 16px 0;
+  }
+
+  &__icons  {
+    display: inline-block;
+    margin-right: 16px;
+  }
+  &__icon {
+    display: inline-block;
+    margin-right: 16px;
+  }
+  &-mail {
+    color: $colorBlack;
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: -0.2px;
+    margin-bottom: 12px;
+  }
+  &-phone:hover{
+    cursor: pointer;
+    color: $textGray;
+  }
+
+}
+
+.header{
+  &__item img{ transition: 0.3s}
+
+  &__item:hover img {
+    filter: drop-shadow(5px 5px 20px red) invert(75%);
+    cursor: pointer;
+  }
+
+  &__item:first-child:hover img{
+    transform: rotate(180deg);
+  }
+
+  &__item:first-child{
+    @media screen and (min-width: 1366px) {
+      display: none;
+    }
+
+  }
+
+  &__item:nth-child(2){
+    @media screen and (min-width: 1366px) {
+      margin-left: 20px;
+    }
+  }
+
+}

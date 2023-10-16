@@ -1,0 +1,66 @@
+$backgroundColor: #F8F8F8;
+$blockTitleBackground: linear-gradient(270deg, #F8F8F8 0%, #FFF 98.61%);
+$textGray: #7E7E82;
+$borderColor: #EAEAEA;
+$colorBlack: #1B1C21;
+$backgroundWhite: #FFF;
+$text: #fff;
+$pinkColor: #FF3E79;
+$activeColor: #B8FFEC;
+
+@font-face {
+  font-family: 'Comic';
+  src: url('../fonts/comic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TT Lakes Regular';
+  src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+  font-family: 'TT Lakes Medium';
+  src: url('../fonts/TTLakesMedium.ttf') format('truetype');
+
+}
+
+@font-face {
+  font-family: 'TT Lakes Bold';
+  src: url('../fonts/TTLakes-Bold.ttf') format('truetype');
+
+}
+
+@import './header.scss';
+@import './footer.scss';
+@import './body.scss';
+@import './title.scss';
+@import './toggle-button.scss';
+@import './slide-menu.scss';
+@import './read-more.scss';
+@import './prices.scss';
+@import './menu.scss';
+@import './commercial.scss';
+@import './swiper.scss';
+@import './brands.scss';
+@import './technics.scss';
+@import './modal.scss';
+
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  //font-family: Comic, sans-serif;
+  background-color: $backgroundColor;
+  //color: $text;
+}
+
+.wrapper{
+  @media screen and (min-width: 1920px){
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}

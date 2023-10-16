@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8' />
+  <meta
+    name='viewport'
+    content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'
+  />
+  <meta http-equiv='X-UA-Compatible' content='ie=edge' />
+  <title><%= htmlWebpackPlugin.options.title %></title>
+
+  <link
+    rel='stylesheet'
+    href='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css'
+  />
+  <script src='https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js'></script>
+
+</head>
+<body>
+<div class='wrapper'>
+  <div class='header'>
+    <div class='header__nav nav'>
+      <div class='nav__block nav__block--flex--start'>
+        <div class='nav__item'><img src='./img/burger.svg' alt=''></div>
+        <div class='nav__item nav__item--size--m'><img src='./img/divider.svg' alt=''></div>
+        <div class='nav__item nav__item--margin--16'><img src='./img/Group.svg' alt=''></div>
+      </div>
+
+      <div class='nav__block nav__block--flex--end'>
+        <div class='nav__item nav__item--size--m'><img src='./img/call.svg' alt=''></div>
+        <div class='nav__item nav__item--size--m'><img src='./img/chat.svg' alt=''></div>
+        <div class='nav__item nav__item--size--m'><img src='./img/profile.svg' alt=''></div>
+        <div class='nav__item'><img src='./img/divider.svg' alt=''></div>
+        <div class='nav__item nav__item--margin--16'><img src='./img/repair.svg' alt=''></div>
+        <div class='nav__item'><img src='./img/checkstatus.svg' alt=''></div>
+      </div>
+    </div>
+  </div>
+
+  <div class='menu menu--hidden'>
+    <div class='menu__header header'>
+      <div class='header__item '><img src='./img/burgerClose.svg' alt='close'></div>
+      <div class='header__item '><img src='./img/Group.svg' alt='close'></div>
+      <div class='header__item '><img src='./img/search.svg' alt='close'></div>
+    </div>
+
+    <ul class='menu__links'>
+      <li class='menu__link'><a href='#' class='link'>Ремонт техники</a></li>
+      <li class='menu__link'><a href='#' class='link'>Услуги и сервисы</a></li>
+      <li class='menu__link'><a href='#' class='link'>Корпоративным клиентам</a></li>
+      <li class='menu__link'><a href='#' class='link'>Продавцам техники</a></li>
+      <li class='menu__link'><a href='#' class='link'>Партнерам</a></li>
+      <li class='menu__link'><a href='#' class='link'>Производителям</a></li>
+      <li class='menu__link'><a href='#' class='link'>Наши сервисные центры</a></li>
+      <li class='menu__link'><a href='#' class='link'>Контакты</a></li>
+    </ul>
+
+    <div class='menu__contacts contacts'>
+      <div class='contacts__icons'>
+        <div class='contacts__icon'><img src='./img/call.svg' alt=''></div>
+        <div class='contacts__icon'><img src='./img/chat.svg' alt=''></div>
+        <div class='contacts__icon'><img src='./img/profile.svg' alt=''></div>
+      </div>
+      <div class='contacts-mail'>mail@cps.com</div>
+      <div class='contacts-phone'> 8 800 890 8900</div>
+    </div>
+
+    <div class='menu__langs langs'>
+      <div class='langs__lang '>RU</div>
+      <div class='langs__lang '>EN</div>
+      <div class='langs__lang '>CH</div>
+    </div>
+
+    <div class='menu__blur-area'></div>
+  </div>
+
+
+  <main class='body'>
+    <div class='body__title title'>
+      <div class='title__title'>
+        <div class='title__icon'><img src='./img/highlight.svg' alt=''></div>
+        <div class='title__text'>Услуги и сервисы</div>
+      </div>
+
+      <div class='title__group title__group--size--l'>
+        <div class='title__column'>
+          <div class='title__column-text'>
+            Оставить заявку
+          </div>
+          <div class='title__column-image'>
+            <img src='./img/repair.svg' alt='repair icon'>
+          </div>
+        </div>
+        <div class='title__column'>
+          <div class='title__column-text'>
+            Статус ремонта
+          </div>
+          <div class='title__column-image'>
+            <img src='./img/checkstatus.svg' alt='check-status icon'>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class='body__slide-menu slide-menu'>
+      <div class='slide-menu__item slide-menu__item--active'>Ремонтируемые бренды</div>
+      <div class='slide-menu__item'>Ремонтируемые устройства</div>
+      <div class='slide-menu__item'>Цены на услуги</div>
+      <div class='slide-menu__item'>Адреса сервисных центров</div>
+      <div class='slide-menu__item'>Специальные цены</div>
+    </div>
+
+    <div class='body__about'>
+      <div class='body__column'>
+        <div class='body__text'>
+          Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+          отремонтировать
+          свой ноутбук Dell с официальной гарантией производителя.
+        </div>
+        <div class='body__sub-text'>
+          Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+        </div>
+        <div class='body__read-more read-more'>
+          <div class='read-more__expand-icon'><img src='./img/expand.svg' alt='expand Icon'></div>
+          <div class='read-more__expand-text'>Читать далее</div>
+        </div>
+      </div>
+      <div class='body__column'><img alt='imageLogo'
+                                     src='./img/_MG_3223.png' class='body__image' /></div>
+
+    </div>
+
+    <div class='brands'>
+      <div class='brands__header'>Ремонт техники различных брендов</div>
+      <div class='brands__body'></div>
+
+      <div class='js-swiper swiper swiper1'>
+        <div class='swiper-wrapper'>
+          <div class='swiper-slide'>
+            <img class='img-fluid' src='./img/Bitmap.png' alt='Image Description'>
+            <img src='./img/go.svg' alt='brand logo'>
+          </div>
+          <div class='swiper-slide'>
+            <img class='img-fluid' src='./img/Bitmap%20(1).png' alt='Image Description'>
+            <img src='./img/go.svg' alt='brand logo'>
+          </div>
+          <div class='swiper-slide'>
+            <img class='img-fluid' src='./img/Bitmap%20(4).png' alt='Image Description'>
+            <img src='./img/go.svg' alt='brand logo'>
+          </div>
+          <div class='swiper-slide'>
+            <img class='img-fluid' src='./img/Bitmap%20(3).png' alt='Image Description'>
+            <img src='./img/go.svg' alt='brand logo'>
+          </div>
+          <div class='swiper-slide'>
+            <img class='img-fluid' src='./img/Bitmap%20(4).png' alt='Image Description'>
+            <img src='./img/go.svg' alt='brand logo'>
+          </div>
+          <div class='swiper-slide'>
+            <img class='img-fluid' src='./img/Bitmap%20(5).png' alt='Image Description'>
+            <img src='./img/go.svg' alt='brand logo'>
+          </div>
+          <div class='swiper-slide'>
+            <img class='img-fluid' src='./img/Bitmap.png' alt='Image Description'>
+            <img src='./img/go.svg' alt='brand logo'>
+          </div>
+          <div class='swiper-slide'>
+            <img class='img-fluid' src='./img/Bitmap%20(1).png' alt='Image Description'>
+            <img src='./img/go.svg' alt='brand logo'>
+          </div>
+          <div class='swiper-slide'>
+            <img class='img-fluid' src='./img/Bitmap%20(4).png' alt='Image Description'>
+            <img src='./img/go.svg' alt='brand logo'>
+          </div>
+          <div class='swiper-slide'>
+            <img class='img-fluid' src='./img/Bitmap%20(3).png' alt='Image Description'>
+            <img src='./img/go.svg' alt='brand logo'>
+          </div>
+          <div class='swiper-slide'>
+            <img class='img-fluid' src='./img/Bitmap%20(4).png' alt='Image Description'>
+            <img src='./img/go.svg' alt='brand logo'>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class='swiper-pagination swiper-pagination1'></div>
+
+
+      <div class='brands__list-wrapper'>
+        <ul class='brands__list'>
+          <li class='brands__item'>
+            <img src='./img/Bitmap.png' alt=''>
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='brands__item'>
+            <img src='./img/Bitmap%20(4).png' alt=''>
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='brands__item'>
+            <img src='./img/Bitmap%20(5).png' alt=''>
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='brands__item'>
+            <img src='./img/Bitmap%20(3).png' alt=''>
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='brands__item'>
+            <img src='./img/Bitmap%20(1).png' alt=''>
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='brands__item'>
+            <img src='./img/Bitmap.png' alt=''>
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='brands__item'>
+            <img src='./img/Bitmap%20(2).png' alt=''>
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='brands__item'>
+            <img src='./img/Bitmap%20(6).png' alt=''>
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='brands__item'>
+            <img src='./img/Bitmap%20(4).png' alt=''>
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='brands__item'>
+            <img src='./img/Bitmap%20(5).png' alt=''>
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='brands__item'>
+            <img src='./img/Bitmap%20(1).png' alt=''>
+            <img src='./img/go.svg' alt=''>
+          </li>
+        </ul>
+
+        <div class='brands__listToggleButton toggle-button'>
+          <div class='toggle-button__icon'><img src='./img/expand.svg' alt=''></div>
+          <div class='toggle-button__text'>Показать все</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class='technics'>
+      <div class='technics__header'>Ремонт различных видов техники</div>
+      <div class='technics__body'></div>
+
+      <div class='js-swiper swiper swiper2'>
+        <div class='swiper-wrapper'>
+          <div class='swiper-slide'>
+            Ремонт ноутбуков
+            <img src='./img/go.svg' alt=''>
+          </div>
+          <div class='swiper-slide'>
+            Ремонт планшетов
+            <img src='./img/go.svg' alt=''>
+          </div>
+          <div class='swiper-slide'>
+            Ремонт ПК
+            <img src='./img/go.svg' alt=''>
+          </div>
+          <div class='swiper-slide'>
+            Ремонт мониторов
+            <img src='./img/go.svg' alt=''>
+          </div>
+          <div class='swiper-slide'>
+            Ремонт телефонов
+            <img src='./img/go.svg' alt=''>
+          </div>
+          <div class='swiper-slide'>
+            Ремонт принтеров
+            <img src='./img/go.svg' alt=''>
+          </div>
+          <div class='swiper-slide'>
+            Ремонт сканеров
+            <img src='./img/go.svg' alt=''>
+          </div>
+          <div class='swiper-slide'>
+            Ремонт айпадов
+            <img src='./img/go.svg' alt=''>
+          </div>
+          <div class='swiper-slide'>
+            Ремонт макбуков
+            <img src='./img/go.svg' alt=''>
+          </div>
+          <div class='swiper-slide'>
+            Ремонт телефонов
+            <img src='./img/go.svg' alt=''>
+          </div>
+          <div class='swiper-slide'>
+            Ремонт ПК
+            <img src='./img/go.svg' alt=''>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class='swiper-pagination swiper-pagination2'></div>
+
+
+      <div class='technics__list-wrapper'>
+        <ul class='technics__list'>
+          <li class='technics__item'>
+            Ремонт ноутбуков
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='technics__item'>
+            Ремонт планшетов
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='technics__item'>
+            Ремонт ПК
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='technics__item'>
+            Ремонт мониторов
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='technics__item'>
+            Ремонт телефонов
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='technics__item'>
+            Ремонт принтеров
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='technics__item'>
+            Ремонт сканеров
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='technics__item'>
+            Ремонт планшетов
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='technics__item'>
+            Ремонт айпадов
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='technics__item'>
+            Ремонт макбуков
+            <img src='./img/go.svg' alt=''>
+          </li>
+          <li class='technics__item'>
+            Ремонт ноутбуков
+            <img src='./img/go.svg' alt=''>
+          </li>
+        </ul>
+
+        <div class='technics__listToggleButton toggle-button'>
+          <div class='toggle-button__icon'><img src='./img/expand.svg' alt=''></div>
+          <div class='toggle-button__text'>Показать все</div>
+        </div>
+      </div>
+    </div>
+
+    <div class='prices'>
+      <div class='prices__header'>Ремонт различных видов техники</div>
+
+      <div class='js-swiper swiper swiper3'>
+        <div class='swiper-wrapper'>
+          <div class='swiper-slide'>
+            <div class='prices__service-name'>Замена полифонического динамика</div>
+            <div class='prices__service-price prices__service-price--header'>Бесплатно</div>
+
+            <div class='prices__service-group'>
+              <div class='service__term'>30-120 мин</div>
+              <div class='service__button'>
+                Заказать
+                <img src='./img/goside.svg' alt=''>
+              </div>
+            </div>
+          </div>
+          <div class='swiper-slide'>
+            <div class='prices__service-name'>Замена дисплея</div>
+            <div class='prices__service-price prices__service-price--header'>1 000 ₽</div>
+
+            <div class='prices__service-group'>
+              <div class='service__term'>30-120 мин</div>
+              <div class='service__button'>
+                Заказать
+                <img src='./img/goside.svg' alt=''>
+              </div>
+            </div>
+          </div>
+          <div class='swiper-slide'>
+            <div class='prices__service-name'>Тестирование с выдачей технического заключения</div>
+            <div class='prices__service-price prices__service-price--header'>Бесплатно</div>
+
+            <div class='prices__service-group'>
+              <div class='service__term'>30-120 мин</div>
+              <div class='service__button'>
+                Заказать
+                <img src='./img/goside.svg' alt=''>
+              </div>
+            </div>
+          </div>
+          <div class='swiper-slide'>
+            <div class='prices__service-name'>Замена программного обеспечения</div>
+            <div class='prices__service-price prices__service-price--header'>1 000 ₽</div>
+
+            <div class='prices__service-group'>
+              <div class='service__term'>30-120 мин</div>
+              <div class='service__button'>
+                Заказать
+                <img src='./img/goside.svg' alt=''>
+              </div>
+            </div>
+          </div>
+          <div class='swiper-slide'>
+            <div class='prices__service-name'>Диагностика</div>
+            <div class='prices__service-price prices__service-price--header'>1 000 ₽</div>
+
+            <div class='prices__service-group'>
+              <div class='service__term'>30-120 мин</div>
+              <div class='service__button'>
+                Заказать
+                <img src='./img/goside.svg' alt=''>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+      <div class='swiper-pagination swiper-pagination3'></div>
+
+
+      <div class='prices__list-wrapper'>
+        <ul class='prices__list'>
+          <li class='prices__item'>
+            <div class='prices__service-name prices__service-name--header'>Ремонтные услуги</div>
+            <div class='prices__service-price prices__service-price--header'>Цена</div>
+            <div class='prices__service-term prices__service-term--header'>Срок</div>
+            <div class='prices__service-button'></div>
+          </li>
+          <li class='prices__item'>
+            <div class='prices__service-name'>Диагностика</div>
+            <div class='prices__service-price'>Бесплатно</div>
+            <div class='prices__service-term'>30 мин</div>
+            <div class='prices__service-button'>Заказать
+              <img src='./img/goside.svg' alt=''></div>
+          </li>
+          <li class='prices__item'>
+            <div class='prices__service-name'>Замена дисплея</div>
+            <div class='prices__service-price'>1 000 ₽</div>
+            <div class='prices__service-term'>30-120 мин</div>
+            <div class='prices__service-button'>Заказать
+              <img src='./img/goside.svg' alt=''></div>
+          </li>
+          <li class='prices__item'>
+            <div class='prices__service-name'>Замена полифонического динамика</div>
+            <div class='prices__service-price'>1 000 ₽</div>
+            <div class='prices__service-term'>30-120 мин</div>
+            <div class='prices__service-button'>Заказать
+              <img src='./img/goside.svg' alt=''></div>
+          </li>
+          <li class='prices__item'>
+            <div class='prices__service-name'>Тестирование с выдачей технического заключения</div>
+            <div class='prices__service-price'>1 000 ₽</div>
+            <div class='prices__service-term'>30-120 мин</div>
+            <div class='prices__service-button'>Заказать
+              <img src='./img/goside.svg' alt=''></div>
+          </li>
+          <li class='prices__item'>
+            <div class='prices__service-name'>Замена программного обеспечения</div>
+            <div class='prices__service-price'>1 000 ₽</div>
+            <div class='prices__service-term'>30-120 мин</div>
+            <div class='prices__service-button'>Заказать
+              <img src='./img/goside.svg' alt=''></div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class='commercial'>
+      <div class='commercial__vat'>Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для
+        получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
+      </div>
+      <div class='commercial__receive-proposal'>
+        Получить коммерческое предложение <img src='./img/more.svg' alt=''>
+      </div>
+    </div>
+  </main>
+
+  <div class='footer'>
+    <div class='footer__row'>
+      © 2019 CPS<br>
+      Разработано командой Apesong
+    </div>
+    <div class='footer__row'>
+      Политика конфиденциальности
+    </div>
+    <div class='footer__row'>
+      Информация, размещенная на данной странице, не является публичной офертой
+    </div>
+  </div>
+
+
+  <div class='call-modal modal modal--hidden '>
+    <div class='modal__blur'></div>
+    <div class='modal__content'>
+      <div class='modal__close-button'> <img src='./img/burgerClose.svg' alt=''></div>
+        <div class='modal__title'>
+          <div class='modal__title-icon'><img src='./img/highlight.svg' alt=''></div>
+          Обратная связь
+        </div>
+        <form action='' class='modal__form'>
+          <input type='text' placeholder='Имя' class='modal__item'>
+          <input type='text' placeholder='Телефон' class='modal__item'>
+          <input type='text' placeholder='Электронная почта' class='modal__item'>
+          <textarea class='modal__item' placeholder='Сообщение'>Сообщение</textarea>
+
+          <div class='modal__privacy privacy'>
+            <div class='privacy__text'>Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и
+              соглашаетесь с нашей <span>политикой конфиденциальности</span>
+            </div>
+            <div class='privacy__button'>
+              Отправить
+              <img src='./img/goside.svg' alt=''>
+            </div>
+          </div>
+        </form>
+
+    </div>
+  </div>
+
+  <div class='feedback-modal modal modal--hidden'>
+    <div class='modal__blur'></div>
+    <div class='modal__content'>
+      <div class='modal__close-button'> <img src='./img/burgerClose.svg' alt=''></div>
+      <div class='modal__title'>
+        <div class='modal__title-icon'><img src='./img/highlight.svg' alt=''></div>
+        Заказать звонок
+      </div>
+      <form action='' class='modal__form'>
+
+        <input type='text' placeholder='Телефон' class='modal__item'>
+        <div class='modal__privacy privacy'>
+          <div class='privacy__text'>Нажимая “отправить”, вы даете согласие на <span>обработку персональных данных</span> и
+            соглашаетесь с нашей <span>политикой конфиденциальности</span>
+          </div>
+          <div class='privacy__button'>
+            Отправить
+            <img src='./img/goside.svg' alt=''>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+.modal {
+  background: $backgroundWhite;
+  //position: absolute;
+  //padding: 0;
+  top: 0;
+  right: 0;
+  display: flex;
+  z-index: 15;
+
+
+  &__blur{
+    width: calc(100vw - 320px);
+
+    @media screen and (min-width: 1366px) {
+      width: calc(100vw - 440px);
+    }
+    height:100%;
+    opacity: 0.9605;
+    background: $backgroundWhite;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 0;
+    padding: 0;
+    z-index: 20;
+  }
+  &__content{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: $backgroundWhite;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.20), -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+    z-index: 24;
+    width: 320px;
+    height: 100%;
+  }
+
+
+  @media screen and (min-width: 320px) {
+    //padding-left: 16px;
+
+
+  }
+  @media screen and (min-width: 1366px) {
+    padding: 32px;
+
+
+    &__content{
+      width: 440px;
+      height: 940px;
+      box-sizing: border-box;
+
+    }
+  }
+
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 8px;
+  }
+
+  &__title {
+    color: $colorBlack;
+    font-family: 'TT Lakes Medium';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.6px;
+    margin-bottom: 24px;
+    padding-left: 15px;
+
+    @media screen and (min-width: 768px) {
+      margin-top: -90px;
+    }
+  }
+
+  &__title-icon {
+    position: relative;
+    top: 45px;
+    left: -15px;
+
+
+  }
+
+  &__item {
+    width: 288px;
+    height: 48px;
+    flex-shrink: 0;
+    margin-top: 16px;
+
+    padding-left: 15px;
+    border-radius: 8px;
+    border: 1px solid $borderColor;
+    background: $backgroundWhite;
+
+    color: #B5B6BC;
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+  }
+
+  &__close-button {
+    margin-top: 24px;
+    margin-left: 16px;
+
+
+    @media screen and (min-width: 768px) {
+      margin-left: -60px;
+    }
+    @media screen and (min-width: 1366px) {
+      margin-left: -100px;
+    }
+  }
+
+  &__blur {
+    //@media screen and (min-width: 768px) {
+    //    display: block;
+    //    width: calc(100% - 320px);
+    //  //float: left;
+    //  opacity: 0.9605;
+    //  position: absolute;
+    //  left: 0;
+    //
+    //  width: 500px;
+    //  height: 400px;
+    //
+    //  background: $backgroundWhite;
+    //}
+    //@media screen and (min-width: 768px) {
+    //
+    //  width: 1000px;
+    //  height: 947px;
+    //  //border: 10px;
+    //  position: fixed;
+    //  left: 0;
+    //  top: 0;
+    //  opacity: 0.9605;
+    //  background: $backgroundWhite;
+    //  //box-shadow: inset -16px 0px 52px -10px rgba(14, 24, 80, 0.20);
+    //
+    //}
+  }
+
+  &__privacy {
+    color: $textGray;
+    font-family: 'TT Lakes Medium';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    margin-top: 16px;
+
+    span {
+      color: $pinkColor;
+    }
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+
+
+.privacy {
+  &__button {
+    color: $backgroundWhite;
+    text-align: right;
+    font-family: "TT Lakes Medium";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 200% */
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+
+    border-radius: 16px;
+    background: $pinkColor;
+    display: flex;
+    align-items: center;
+    padding: 5px 5px 5px 12px;
+    width: 115px;
+    justify-content: space-between;
+
+    margin: 20px 20px 0 auto;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+
+}

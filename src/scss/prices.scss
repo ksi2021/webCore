@@ -1,0 +1,238 @@
+.prices {
+
+  &__header {
+    color: $textGray;
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    padding: 16px 0 16px 32px;
+    height: 56px;
+    background: $blockTitleBackground;
+    box-sizing: border-box;
+
+    @media screen and (min-width: 320px){
+      height: 72px;
+    }
+    @media screen and (min-width: 360px){
+      height: 56px;
+    }
+  }
+
+  &__list-wrapper {
+    background: $backgroundColor;
+    padding-bottom: 34px;
+  }
+
+  &__list {
+    padding: 24px;
+    margin: 0;
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+    flex-wrap: wrap;
+    //justify-content: space-between;
+    //max-height: 160px;
+    overflow: hidden;
+    transition: all .5s;
+
+
+    @media (min-width: 320px){
+      display: none;
+    }
+    @media (min-width: 768px){
+      display: flex;
+    }
+  }
+
+  &__item {
+    height: 64px;
+    //margin-top: 16px;
+
+    //border-radius: 6px;
+    //border: 1px solid $borderColor;
+    background: $backgroundWhite;
+    padding: 16px;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    //align-items: center;
+    position: relative;
+    color: $colorBlack;
+    font-family: 'TT Lakes Medium';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: 0.2px;
+
+    &:before{
+      content: '';
+      position: absolute;
+      top: 64px;
+      left: 0;
+      z-index: 10;
+      height: 1px;
+      width: calc(100% - 40px);
+      margin-left: 20px;
+      background: $borderColor;
+    }
+
+    &:last-child:before{
+      content: none;
+    }
+
+    &:first-child{
+      color: $textGray;
+      font-family: 'TT Lakes Medium';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px; /* 114.286% */
+      opacity: 0.7218;
+
+      background: none;
+      .prices__service-button{
+        visibility: hidden;
+        height: 1000px;
+      }
+      .prices__service-term{
+        text-align: center;
+      }
+    }
+  }
+
+  &__service-term{
+    width: 85px;
+
+  }
+  &__service-button{
+    color: $backgroundWhite;
+    text-align: right;
+    font-family: "TT Lakes Medium";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 200% */
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+
+    border-radius: 16px;
+    background: $pinkColor;
+    display: flex;
+    align-items: center;
+    padding: 5px 5px 5px 12px;
+    width: 115px;
+    justify-content: space-between;
+
+    &:hover{
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+  &__service-name{
+    width: 350px;
+
+    @media (min-width: 768px) {
+      white-space: nowrap;
+    }
+  }
+  //@media screen and (min-width: 320px) {
+  //  &__header {
+  //    padding: 16px 0 16px 16px;
+  //    height:72px;
+  //  }
+  //  &__item {
+  //    width: 240px;
+  //  }
+  //
+  //  &__list-wrapper {
+  //    display: none;
+  //  }
+  //
+  //}
+  //@media screen and (min-width: 360px){
+  //  &__header {
+  //    height:auto;
+  //  }
+  //}
+  //
+  //@media screen and (min-width: 320px) {
+  //  &__header {
+  //    padding: 16px 0 16px 16px;
+  //    height:72px;
+  //  }
+  //  &__item {
+  //    width: 240px;
+  //  }
+  //
+  //  &__list-wrapper {
+  //    display: none;
+  //  }
+  //
+  //}
+  //@media screen and (min-width: 360px){
+  //  &__header {
+  //    height:auto;
+  //  }
+  //}
+  //@media screen and (min-width: 768px) {
+  //  &__header {
+  //    padding: 16px 0 16px 24px;
+  //  }
+  //  &__item {
+  //    margin-right: 24px;
+  //    width: 224px;
+  //  }
+  //
+  //  &__item:nth-child(3n) {
+  //    margin-right: 0;
+  //
+  //  }
+  //  &__list {
+  //    max-width: 768px;
+  //  }
+  //  //.js-swiper, .swiper-pagination {
+  //  //  display: none !important;
+  //  //}
+  //
+  //  &__list-wrapper {
+  //    display: block;
+  //  }
+  //
+  //}
+  //
+  //@media screen and (min-width: 1366px) {
+  //  &__header {
+  //    padding: 16px 0 16px 32px;
+  //  }
+  //  &__item {
+  //    margin-right: 32px;
+  //    width: 240px;
+  //  }
+  //
+  //  &__item:nth-child(3n) {
+  //    margin-right: 32px;
+  //  }
+  //
+  //  &__item:nth-child(4n) {
+  //    margin-right: 0;
+  //  }
+  //  &__list {
+  //    max-width: 1120px;
+  //  }
+  //  //.js-swiper, .swiper-pagination {
+  //  //  display: none !important;
+  //  //}
+  //
+  //  &__list-wrapper {
+  //    display: block;
+  //  }
+  //}
+}

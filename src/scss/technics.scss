@@ -1,0 +1,149 @@
+.technics {
+  &__header {
+    color: $textGray;
+    font-family: "TT Lakes Medium";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    padding: 16px 0 16px 32px;
+    height: 56px;
+    background: $blockTitleBackground;
+    box-sizing: border-box;
+  }
+
+  &__list-wrapper {
+    background: $backgroundColor;
+    padding-bottom: 34px;
+  }
+
+  &__list {
+    padding: 24px;
+    margin: 0;
+
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    max-height: 160px;
+    overflow: hidden;
+    transition: all .5s;
+  }
+
+  &__list--opened {
+    max-height: 800px;;
+  }
+
+  &__item {
+    color: $colorBlack;
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+
+    width: 240px;
+    height: 160px;
+
+    margin-top: 16px;
+
+    border-radius: 6px;
+    border: 1px solid $borderColor;
+    background: $backgroundWhite;
+    padding: 16px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    img{
+      align-self: end  ;
+    }
+
+  }
+  &__listToggleButton{
+    margin-left: 24px;
+    width: 125px;
+    transition: 0.2s;
+  }
+
+
+  @media screen and (min-width: 320px) {
+    &__header {
+      padding: 16px 0 16px 16px;
+      height:72px;
+    }
+    &__item {
+      width: 240px;
+    }
+
+    &__list-wrapper {
+      display: none;
+    }
+
+  }
+
+  @media screen and (min-width: 360px){
+    &__header {
+      height:auto;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &__header {
+      padding: 16px 0 16px 24px;
+    }
+    &__item {
+      margin-right: 24px;
+      width: 224px;
+    }
+
+    &__item:nth-child(3n) {
+      margin-right: 0;
+
+    }
+    &__list {
+      max-width: 768px;
+    }
+    //.js-swiper, .swiper-pagination {
+    //  display: none !important;
+    //}
+
+    &__list-wrapper {
+      display: block;
+    }
+
+  }
+
+  @media screen and (min-width: 1366px) {
+    &__header {
+      padding: 16px 0 16px 32px;
+    }
+    &__item {
+      margin-right: 32px;
+      width: 240px;
+    }
+
+    &__item:nth-child(3n) {
+      margin-right: 32px;
+    }
+
+    &__item:nth-child(4n) {
+      margin-right: 0;
+    }
+    &__list {
+      max-width: 1120px;
+    }
+    //.js-swiper, .swiper-pagination {
+    //  display: none !important;
+    //}
+
+    &__list-wrapper {
+      display: block;
+    }
+  }
+}
