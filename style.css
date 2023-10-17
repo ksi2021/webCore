@@ -1017,7 +1017,8 @@
     letter-spacing: -0.2px; }
   .modal__close-button {
     margin-top: 24px;
-    margin-left: 16px; }
+    margin-left: 16px;
+    width: 40px; }
     @media screen and (min-width: 768px) {
       .modal__close-button {
         margin-left: -60px; } }
