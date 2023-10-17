@@ -482,26 +482,34 @@
     @media screen and (min-height: 915px) {
       .menu__contacts {
         margin-top: 100px; } }
-  @media (min-width: 320px) {
-    .menu__langs {
-      margin-top: -50px; } }
-  @media (min-width: 768px) {
-    .menu__langs {
-      margin-bottom: 0; } }
-  .menu__langs .langs__lang {
-    display: inline-block;
-    color: #1B1C21;
-    font-family: "TT Lakes Medium";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    /* 150% */
-    letter-spacing: -0.2px;
-    margin-right: 7px; }
-    .menu__langs .langs__lang:hover {
-      color: #7E7E82;
-      cursor: pointer; }
+  .menu__langs {
+    padding-left: 16px; }
+    @media screen and (min-height: 600px) {
+      .menu__langs {
+        padding-bottom: 0; } }
+    @media screen and (min-height: 700px) {
+      .menu__langs {
+        padding-bottom: 16px; } }
+    @media (min-width: 320px) {
+      .menu__langs {
+        margin-top: -50px; } }
+    @media (min-width: 768px) {
+      .menu__langs {
+        margin-bottom: 0; } }
+    .menu__langs .langs__lang {
+      display: inline-block;
+      color: #1B1C21;
+      font-family: "TT Lakes Medium";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      /* 150% */
+      letter-spacing: -0.2px;
+      margin-right: 7px; }
+      .menu__langs .langs__lang:hover {
+        color: #7E7E82;
+        cursor: pointer; }
   .menu__contacts .contacts-phone {
     color: #1B1C21;
     font-family: "TT Lakes Medium";
@@ -516,8 +524,7 @@
             filter: drop-shadow(5px 5px 20px red) invert(75%);
     cursor: pointer; }
 
-.menu__contacts,
-.menu__langs {
+.menu__contacts {
   padding-left: 16px;
   padding-bottom: 32px; }
 
