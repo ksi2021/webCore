@@ -21,8 +21,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 19px 16px;
-  flex-shrink: 0; }
+  margin: 0;
+  flex-shrink: 0;
+  background-color: #FFF; }
 
 .nav__block {
   display: flex;
@@ -36,7 +37,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 19px 16px;
+    padding: 8px 16px;
     flex-shrink: 0; }
   .header .nav__item--size--m {
     display: none; } }
@@ -46,7 +47,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 19px 16px;
+    padding: 8px 16px;
     flex-shrink: 0; }
   .header .nav__item--size--m {
     display: block;
