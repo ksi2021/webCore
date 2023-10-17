@@ -1,11 +1,12 @@
 .menu {
   position: absolute;
   width: 320px;
+  height: 100vh;
   transition: .3s;
-  top:0;
+  top: 0;
   background: $backgroundWhite;
   z-index: 10;
-  box-shadow:  16px 0 52px 0 rgba(14, 24, 80, 0.20);
+  box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.20);
 
   @media screen and (min-width: 360px) {
     width: 360px;
@@ -16,11 +17,10 @@
   }
 
   @media screen and (min-width: 768px) {
-    &__blur-area{
+    &__blur-area {
       width: 1000px;
-      height: 947px;
+      height: 100vh;
       border: 10px;
-
       position: absolute;
       left: 320px;
       top: 0;
@@ -30,19 +30,19 @@
     }
   }
 
-  @media screen and (min-width: 1366px){
+  @media screen and (min-width: 1366px) {
     box-shadow: none;
-    left:0;
+    left: 0;
     position: fixed;
-    &__blur-area{
+    &__blur-area {
       display: none;
     }
   }
 
-  &--hidden{
+  &--hidden {
     left: -1366px;
 
-    @media screen and (min-width: 1366px){
+    @media screen and (min-width: 1366px) {
       left: 0;
     }
   }
@@ -57,13 +57,17 @@
     list-style: none;
     margin-top: 50px;
     padding-left: 24px;
-
-    @media (min-width: 320px){ margin-bottom: -170px}
-    @media (min-width: 760px){ margin-bottom: 0}
+    @media (max-height: 600px) {
+      margin-top: 20px;
+    }
+    //@media (min-width: 320px){ margin-bottom: -170px}
+    @media (min-width: 760px) {
+      margin-bottom: 0
+    }
   }
 
   &__link {
-    margin-bottom: 32px;
+    //margin-bottom: 32px;
     color: $colorBlack;;
     font-family: "TT Lakes Medium";
     font-size: 16px;
@@ -72,6 +76,19 @@
     line-height: 24px;
     /* 150% */
     letter-spacing: -0.2px;
+
+
+    @media screen and (min-height: 320px) {
+      margin-bottom: 16px;
+    }
+    @media screen and (min-height: 900px) {
+      margin-bottom: 32px;
+    }
+
+
+    //@media screen and (max-width: 1366px){
+    //  margin-bottom: 140px;
+    //}
   }
 
   &__link a {
@@ -112,15 +129,29 @@
 
   &__contacts {
     margin-bottom: 40px;
+    @media screen and (min-height: 915px) {
+      margin-top: 100px;
+    }
   }
 
 
-
-
   &__langs {
+    padding-left: 16px;
 
-    @media (min-width: 320px){ margin-top: -50px}
-    @media (min-width: 768px){ margin-bottom: 0}
+    @media screen and (min-height: 600px) {
+      padding-bottom: 0;
+    }
+
+    @media screen and (min-height: 700px) {
+      padding-bottom: 16px;
+    }
+
+    @media (min-width: 320px) {
+      margin-top: -50px
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 0
+    }
 
     .langs__lang {
       display: inline-block;
@@ -141,8 +172,9 @@
 
     }
   }
-  &__contacts  {
-    .contacts-phone{
+
+  &__contacts {
+    .contacts-phone {
       color: $colorBlack;
       font-family: "TT Lakes Medium";
       font-size: 24px;
@@ -152,6 +184,7 @@
       /* 133.333% */
       letter-spacing: -0.6px;
     }
+
     .contacts__icon:hover img {
       filter: drop-shadow(5px 5px 20px red) invert(75%);
       cursor: pointer;
@@ -160,8 +193,7 @@
   }
 }
 
-.menu__contacts,
-.menu__langs {
+.menu__contacts {
   padding-left: 16px;
   padding-bottom: 32px;
 }
@@ -178,19 +210,21 @@
 }
 
 
-.contacts{
+.contacts {
   &__icons {
-    margin: 172px 0 16px 0;
+    margin: 0 0 16px 0;
   }
 
-  &__icons  {
+  &__icons {
     display: inline-block;
     margin-right: 16px;
   }
+
   &__icon {
     display: inline-block;
     margin-right: 16px;
   }
+
   &-mail {
     color: $colorBlack;
     font-family: "TT Lakes Medium";
@@ -202,33 +236,36 @@
     letter-spacing: -0.2px;
     margin-bottom: 12px;
   }
-  &-phone:hover{
+
+  &-phone:hover {
     cursor: pointer;
     color: $textGray;
   }
 
 }
 
-.header{
-  &__item img{ transition: 0.3s}
+.header {
+  &__item img {
+    transition: 0.3s
+  }
 
   &__item:hover img {
     filter: drop-shadow(5px 5px 20px red) invert(75%);
     cursor: pointer;
   }
 
-  &__item:first-child:hover img{
+  &__item:first-child:hover img {
     transform: rotate(180deg);
   }
 
-  &__item:first-child{
+  &__item:first-child {
     @media screen and (min-width: 1366px) {
       display: none;
     }
 
   }
 
-  &__item:nth-child(2){
+  &__item:nth-child(2) {
     @media screen and (min-width: 1366px) {
       margin-left: 20px;
     }
